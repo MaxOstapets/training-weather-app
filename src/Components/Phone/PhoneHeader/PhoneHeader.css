@@ -1,0 +1,28 @@
+.PhoneHeader{
+    width: 100%;
+    background: rgb(0, 78, 156);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: Arial;
+    font-weight: 900;
+    gap: 10px;
+    margin-top: 0;
+    height: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.LogoTitle{font-size: 10px;}
+
+.AppTitle{font-size: 15px;}
+
+.Icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 7px;
+    font-weight: normal;
+}
