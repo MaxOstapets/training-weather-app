@@ -10,8 +10,8 @@
     gap: 10px;
     margin-top: 0;
     height: 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
 }
 
 .LogoTitle{font-size: 10px;}
