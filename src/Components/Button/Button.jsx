@@ -3,7 +3,7 @@ import ButtonStyle from './Button.module.css'
 import { useState } from 'react'
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
-export const Button = () => {
+const Button = () => {
     const [color, setColor] = useState(true)
     const [icon, setIcon] = useState(true)
 
@@ -21,3 +21,5 @@ export const Button = () => {
         </button>
     )
 }
+
+export default Button;

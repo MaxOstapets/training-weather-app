@@ -1,0 +1,15 @@
+.mainHeader{
+    color: white;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 30px 0 30px 40px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}

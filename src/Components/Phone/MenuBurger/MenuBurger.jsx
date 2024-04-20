@@ -1,6 +1,6 @@
 import './MenuBurger.css'
 
-export const MenuBurger = () => {
+const MenuBurger = () => {
     return(
         <div className="MenuBurger">
             <div className='MenuPages'>
@@ -15,3 +15,5 @@ export const MenuBurger = () => {
         </div>
     )
 }
+
+export default MenuBurger;

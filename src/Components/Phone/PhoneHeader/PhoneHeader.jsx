@@ -1,6 +1,6 @@
 import './PhoneHeader.css'
 
-export const PhoneHeader = () => {
+const PhoneHeader = () => {
     return(
         <header className='PhoneHeader'>
             <span className='LogoTitle'>Logo</span>
@@ -12,3 +12,5 @@ export const PhoneHeader = () => {
         </header>
     )
 }
+
+export default PhoneHeader;

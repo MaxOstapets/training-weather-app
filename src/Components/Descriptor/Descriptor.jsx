@@ -1,6 +1,6 @@
 import './Descriptor.css'
 
-export const Descriptor = () => {
+const Descriptor = () => {
     return(
         <div className='Descriptor'>
             <span className='Title'>Weather App</span>
@@ -9,3 +9,5 @@ export const Descriptor = () => {
         </div>
     )
 }
+
+export default Descriptor;

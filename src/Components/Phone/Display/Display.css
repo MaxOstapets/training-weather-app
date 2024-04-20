@@ -1,9 +1,0 @@
-#iphone {
-    width: 308px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 20px;
-    border: 5px solid rgb(0, 69, 107);
-}

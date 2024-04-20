@@ -1,6 +1,6 @@
 import './Widget.css'
 
-export const Widget = () => {
+const Widget = () => {
     return(
         <div className='Widget'>
             <div className='WidgetHeader'>
@@ -11,3 +11,5 @@ export const Widget = () => {
         </div>
     )
 }
+
+export default Widget;
