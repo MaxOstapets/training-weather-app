@@ -1,0 +1,20 @@
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 750px;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    gap: 50px;
+    margin: 170px auto;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.deepInfo{
+    font-size: 25px;
+}
