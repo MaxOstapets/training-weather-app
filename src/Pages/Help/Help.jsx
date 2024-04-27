@@ -1,4 +1,4 @@
-import GetHelp from "../../components/GetHelp/GetHelp";
+import GetHelp from "../../Components/GetHelp/GetHelp";
 
 const Help = () => {
     return(

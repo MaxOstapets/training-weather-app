@@ -1,4 +1,4 @@
-import Information from "../../components/Information/Information"
+import Information from "../../Components/Information/Information"
 
 const AboutUs = () => {
     return(

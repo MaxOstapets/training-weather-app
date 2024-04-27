@@ -1,21 +1,13 @@
 import iconStyle from "./Icons.module.css"
+import { NavLink } from "react-router-dom";
 
-const Icons = ({title = "default"}) => {
-    const icons = [
-        {icon: "M"},
-        {icon: "H"},
-        {icon: "F"}
-    ]
-    
+const Icons = () => {
     return(
-    
-    <ul className={iconStyle.list}>
-        {icons.map((el, i) => (
-            <li key={i} className={iconStyle.icon}>{el.icon}</li>
-        ))
-        }
-    </ul>
-    
+        <ul className={iconStyle.list}>
+            <NavLink className={iconStyle.icon} to={'/netflix'}>I1</NavLink>
+            <NavLink className={iconStyle.icon} to={'/game'}>I2</NavLink>
+            <NavLink className={iconStyle.icon} to={'/music'}>I3</NavLink>
+        </ul>
     )
 }
 

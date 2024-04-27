@@ -1,10 +1,11 @@
+import NetflixDisplay from "../../Components/Phone/NetflixDisplay/NetflixDisplay";
 import Header from '../../Components/Header/Header';
 import Descriptor from '../../Components/Descriptor/Descriptor';
 import Display from '../../Components/Phone/Display/Display';
 import Button from '../../Components/Button/Button';
 
-export const Home = () =>{
-  return (
+const Netflix = () => {
+    return(
     <>
       <Header />
       
@@ -15,9 +16,11 @@ export const Home = () =>{
             <Button />
         </div>
         
-        <Display />
+        <NetflixDisplay />
       
       </div>
     </>
-  )
+    )
 }
+
+export default Netflix;
