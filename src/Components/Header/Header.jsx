@@ -1,15 +1,16 @@
 import './Header.module.css'
 import headerStyles from './Header.module.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const Header = () => {
-    return(
+    const {pathname} = useLocation()
 
+    return(
         <nav className={headerStyles.mainHeader}>
             <ul className={headerStyles.list}>
-                <NavLink to={"/"}>Home</NavLink>
-                <NavLink to={"/aboutus"}>About Us</NavLink>
-                <NavLink to={"/help"}>Help</NavLink>
+                <NavLink to={"/"} className={pathname ==="/" ? headerStyles.linkPresent : headerStyles.link}>Home</NavLink>
+                <NavLink to={"/aboutus"} className={pathname ==="/aboutus" ? headerStyles.linkPresent : headerStyles.link}>About Us</NavLink>
+                <NavLink to={"/help"} className={pathname ==="/help" ? headerStyles.linkPresent : headerStyles.link}>Help</NavLink>
             </ul>
         </nav>
     )

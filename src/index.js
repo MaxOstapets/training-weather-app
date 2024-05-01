@@ -5,24 +5,35 @@ import './App.css';
 import { Home } from './Pages/Home/Home';
 import  AboutUs  from './Pages/AboutUs/AboutUs';
 import Help from './Pages/Help/Help';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Netflix from './Pages/Netflix/Netflix';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const PagesRouters = () => {
-  return(
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-          <Route path='netflix' element={<Netflix/>}/>
-        <Route path='aboutus' element={<AboutUs/>}/>
-        <Route path='help' element={<Help/>}/>
-      </Routes>
-    </Router>
-  )
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    children:[{
+      path: "/:netflix",
+      element: <Netflix /> 
+    }]
+  },
+
+  {
+    path: "/help",
+    element: <Help />,
+  },
+
+  {
+    path: "/aboutus",
+    element: <AboutUs />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <PagesRouters />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

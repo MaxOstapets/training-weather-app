@@ -1,25 +1,8 @@
-import NetflixDisplay from "../../Components/Phone/NetflixDisplay/NetflixDisplay";
-import Header from '../../Components/Header/Header';
-import Descriptor from '../../Components/Descriptor/Descriptor';
-import Display from '../../Components/Phone/Display/Display';
-import Button from '../../Components/Button/Button';
+import NetflixEl from "../../Components/Phone/NetflixEl/NetfliEl";
 
 const Netflix = () => {
     return(
-    <>
-      <Header />
-      
-      <div className="Main">
-        
-        <div className="BtnAndDescriptor">
-            <Descriptor />
-            <Button />
-        </div>
-        
-        <NetflixDisplay />
-      
-      </div>
-    </>
+        <NetflixEl />
     )
 }
 

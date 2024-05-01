@@ -13,7 +13,12 @@
     gap: 120px;
 }
 
-a{
+.link{
     text-decoration: none;
+    color: white;
+}
+
+.linkPresent{
+    text-decoration: underline;
     color: white;
 }
